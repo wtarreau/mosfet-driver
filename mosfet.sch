@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -43,8 +43,12 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -54,6 +58,55 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Mittellin" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="Accent_neu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="NXP" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="NXP_2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="KASTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="KASTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="FRNTTEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="BACKMAAT2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="BIFRNTTEK" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="BIFRNTMAT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="BottomExtra" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="Accent" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -6332,6 +6385,172 @@ http://www.zetex.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="nxp_60">
+<description>&lt;H1&gt;NXP Library&lt;/H1&gt;
+&lt;author&gt;marco.kuystermans@nxp.com&lt;/author&gt;&lt;p&gt;
+
+&lt;H2&gt;Disclaimer:&lt;/H2&gt;
+&lt;i&gt;The information contained in this library is made available for general information and public access only. By using our 
+library, you accept this disclaimer in full. If you disagree with any part of this disclaimer, you must not use our library.
+Use of this library is permitted on the basis that NXP will not be liable for any loss or damage including without limitation, indirect or consequential loss or 
+damage, arising out of or in connection with the use of this library.&lt;/i&gt;
+
+&lt;H2&gt;Information:&lt;/H2&gt;
+&lt;ul&gt;&lt;li&gt;Footprints are according to NXP footprint information, see &lt;a href=http://www.nxp.com&gt;NXP website&lt;/a&gt;
+&lt;li&gt;SMD Footprints in this library are for reflow soldering only.
+&lt;li&gt;&lt;b&gt;Library is generated as a courtesy: Information is NOT guaranteed, use at your own risk&lt;/b&gt;
+&lt;li&gt;NXP package numbers (SOT/SOD) numbers used
+&lt;/ul&gt;
+Please send your comments to the mail address above.</description>
+<packages>
+<package name="SOT23">
+<description>&lt;li&gt;&lt;b&gt;SOT23&lt;/b&gt;&lt;hr&gt; &lt;ul&gt;&lt;li&gt;Plastic surface-mounted package; 3 leads&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: TO-236AB &lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: -- &lt;li&gt;&lt;u&gt;JEITA&lt;/u&gt;: --&lt;/ul&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="0.6604" x2="-0.8636" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<text x="2.5" y="0.49" size="1" layer="25" font="vector">&gt;NAME</text>
+<text x="2.5" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT323">
+<description>&lt;li&gt;&lt;b&gt;SOT323&lt;/b&gt;&lt;hr&gt;
+&lt;ul&gt;&lt;li&gt;Plastic surface-mounted package; 3 leads
+&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;JEITA&lt;/u&gt;: SC-70&lt;/ul&gt;</description>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.375" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.375" width="0.127" layer="21"/>
+<wire x1="-0.125" y1="-0.625" x2="0.125" y2="-0.625" width="0.127" layer="21"/>
+<smd name="2" x="0.65" y="-0.925" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<smd name="1" x="-0.65" y="-0.925" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<smd name="3" x="0" y="0.925" dx="0.6" dy="0.6" layer="1" rot="R270"/>
+<text x="2" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
+<text x="2" y="0.5" size="1" layer="25" font="vector">&gt;NAME</text>
+<rectangle x1="0.5" y1="-0.975" x2="0.8" y2="-0.575" layer="51" rot="R270"/>
+<rectangle x1="-0.8" y1="-0.975" x2="-0.5" y2="-0.575" layer="51" rot="R270"/>
+<rectangle x1="-0.15" y1="0.575" x2="0.15" y2="0.975" layer="51" rot="R270"/>
+</package>
+<package name="SOT416">
+<description>&lt;li&gt;&lt;b&gt;SOT416&lt;/b&gt;&lt;hr&gt;
+&lt;ul&gt;&lt;li&gt;Plastic surface-mounted package; 3 leads
+&lt;li&gt;&lt;u&gt;JEDEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;IEC&lt;/u&gt;: --
+&lt;li&gt;&lt;u&gt;JEITA&lt;/u&gt;: SC-75&lt;/ul&gt;</description>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.1524" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="-0.45" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.45" y1="0.4" x2="0.8" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="-0.8" y1="-0.15" x2="-0.8" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.15" width="0.1524" layer="21"/>
+<smd name="2" x="0.5" y="-0.65" dx="0.6" dy="0.5" layer="1" rot="R270"/>
+<smd name="1" x="-0.5" y="-0.65" dx="0.6" dy="0.5" layer="1" rot="R270"/>
+<smd name="3" x="0" y="0.65" dx="0.6" dy="0.5" layer="1" rot="R270"/>
+<text x="1.5" y="-1" size="1" layer="27" font="vector">&gt;VALUE</text>
+<text x="1.5" y="0.5" size="1" layer="25" font="vector">&gt;NAME</text>
+<rectangle x1="-0.6" y1="-0.7" x2="-0.4" y2="-0.4" layer="51"/>
+<rectangle x1="0.4" y1="-0.7" x2="0.6" y2="-0.4" layer="51"/>
+<rectangle x1="-0.1" y1="0.4" x2="0.1" y2="0.7" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="N-MOSFET">
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="-0.254" x2="4.318" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="-0.254" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="0" x2="2.032" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="0.762" x2="2.032" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-0.762" x2="1.016" y2="0" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="-11.43" y="0" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-11.43" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="G" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2N7002" prefix="T">
+<description>&lt;H2&gt;N-channel TrenchMOS FET&lt;/H2&gt;
+N-channel enhancement mode Field-Effect Transistor (FET) in a plastic package using
+TrenchMOS technology.
+&lt;p&gt;&lt;author&gt;AAL Eindhoven MK&lt;/author&gt;&lt;hr&gt;&lt;p&gt;
+ &lt;img src="http://www.nxp.com/img/NXP_logo.png"&gt;</description>
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="E"/>
+<technology name="F"/>
+<technology name="P"/>
+<technology name="T"/>
+</technologies>
+</device>
+<device name="PW" package="SOT323">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PT" package="SOT416">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6343,11 +6562,10 @@ http://www.zetex.com&lt;p&gt;
 </classes>
 <parts>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="10"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="22"/>
 <part name="Q1" library="transistor-npn" deviceset="BC847*" device="SMD" technology="C"/>
-<part name="Q2" library="transistor-npn" deviceset="BC847*" device="SMD" technology="C"/>
 <part name="Q3" library="transistor-pnp" deviceset="BC857*" device="SMD" technology="C"/>
 <part name="Q4" library="transistor-power" deviceset="IRF530" device=""/>
 <part name="T1" library="zetex" deviceset="NMOSSOT23" device="" value="AO3406"/>
@@ -6355,25 +6573,70 @@ http://www.zetex.com&lt;p&gt;
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805K" value="10µ"/>
+<part name="T3" library="nxp_60" deviceset="2N7002" device="" technology="E"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="22"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="50.8" y="53.34" rot="R90"/>
-<instance part="R2" gate="G$1" x="40.64" y="38.1"/>
-<instance part="R4" gate="G$1" x="66.04" y="53.34" rot="R90"/>
-<instance part="R5" gate="G$1" x="78.74" y="43.18" rot="R90"/>
-<instance part="Q1" gate="G$1" x="58.42" y="53.34"/>
-<instance part="Q2" gate="G$1" x="48.26" y="30.48"/>
-<instance part="Q3" gate="G$1" x="58.42" y="30.48"/>
-<instance part="Q4" gate="G$1" x="91.44" y="30.48"/>
-<instance part="T1" gate="A" x="78.74" y="30.48"/>
-<instance part="T2" gate="A" x="78.74" y="53.34" rot="MR180"/>
-<instance part="JP1" gate="G$1" x="22.86" y="30.48" rot="R180"/>
-<instance part="JP2" gate="A" x="93.98" y="40.64" rot="R270"/>
-<instance part="C2" gate="G$1" x="99.06" y="55.88"/>
+<instance part="R1" gate="G$1" x="50.8" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="49.3014" y="49.53" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="54.102" y="49.53" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="40.64" y="30.48" smashed="yes" rot="R270">
+<attribute name="NAME" x="42.1386" y="34.29" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="37.338" y="34.29" size="1.27" layer="96" rot="R270"/>
+</instance>
+<instance part="R4" gate="G$1" x="66.04" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.5414" y="49.53" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="69.342" y="49.53" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="R5" gate="G$1" x="81.28" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="85.09" y="44.2214" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="85.09" y="49.022" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="Q1" gate="G$1" x="58.42" y="53.34" smashed="yes">
+<attribute name="NAME" x="57.15" y="48.26" size="1.27" layer="95"/>
+<attribute name="VALUE" x="59.69" y="59.69" size="1.27" layer="96" align="bottom-center"/>
+</instance>
+<instance part="Q3" gate="G$1" x="58.42" y="30.48" smashed="yes">
+<attribute name="NAME" x="57.15" y="34.29" size="1.27" layer="95"/>
+<attribute name="VALUE" x="59.69" y="24.13" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="Q4" gate="G$1" x="91.44" y="30.48" smashed="yes">
+<attribute name="NAME" x="90.17" y="34.29" size="1.27" layer="95"/>
+<attribute name="VALUE" x="92.71" y="24.13" size="1.27" layer="96" align="top-center"/>
+</instance>
+<instance part="T1" gate="A" x="76.2" y="30.48" smashed="yes">
+<attribute name="VALUE" x="76.2" y="24.13" size="1.27" layer="96" align="top-center"/>
+<attribute name="NAME" x="78.74" y="30.48" size="1.27" layer="95"/>
+</instance>
+<instance part="T2" gate="A" x="76.2" y="53.34" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="76.2" y="59.69" size="1.27" layer="96" align="bottom-center"/>
+<attribute name="NAME" x="78.74" y="50.8" size="1.27" layer="95" rot="MR180"/>
+</instance>
+<instance part="JP1" gate="G$1" x="22.86" y="30.48" smashed="yes" rot="R180">
+<attribute name="NAME" x="29.21" y="24.765" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="29.21" y="35.56" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="JP2" gate="A" x="93.98" y="40.64" smashed="yes" rot="R270">
+<attribute name="NAME" x="102.235" y="46.99" size="1.27" layer="95" rot="R270"/>
+<attribute name="VALUE" x="86.36" y="46.99" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C2" gate="G$1" x="99.06" y="55.88" smashed="yes">
+<attribute name="NAME" x="100.584" y="56.261" size="1.27" layer="95"/>
+<attribute name="VALUE" x="100.584" y="51.181" size="1.27" layer="96"/>
+</instance>
+<instance part="T3" gate="G$1" x="48.26" y="30.48" smashed="yes">
+<attribute name="VALUE" x="49.53" y="24.13" size="1.27" layer="96" align="top-center"/>
+<attribute name="NAME" x="46.99" y="34.29" size="1.27" layer="95"/>
+</instance>
+<instance part="R3" gate="G$1" x="81.28" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="85.09" y="36.6014" size="1.27" layer="95" rot="R180"/>
+<attribute name="VALUE" x="85.09" y="41.402" size="1.27" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6381,28 +6644,26 @@ http://www.zetex.com&lt;p&gt;
 <net name="N$1" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="T1" gate="A" pin="D"/>
-<wire x1="78.74" y1="35.56" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="G"/>
-<wire x1="83.82" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="38.1" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
-<junction x="78.74" y="38.1"/>
+<wire x1="86.36" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="45.72" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="38.1" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<junction x="86.36" y="38.1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="E"/>
-<wire x1="30.48" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="C"/>
-<wire x1="50.8" y1="25.4" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
-<junction x="50.8" y="25.4"/>
 <junction x="60.96" y="25.4"/>
 <pinref part="T1" gate="A" pin="S"/>
-<wire x1="60.96" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="25.4" x2="60.96" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="S"/>
-<wire x1="78.74" y1="25.4" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
-<junction x="78.74" y="25.4"/>
+<wire x1="76.2" y1="25.4" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
+<junction x="76.2" y="25.4"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="27.94" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
@@ -6412,27 +6673,27 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="99.06" y1="25.4" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="43.18" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
+<pinref part="T3" gate="G$1" pin="S"/>
+<junction x="50.8" y="25.4"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="B"/>
-<wire x1="45.72" y1="38.1" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<junction x="40.64" y="25.4"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="30.48" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="30.48" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="T3" gate="G$1" pin="G"/>
+<wire x1="45.72" y1="27.94" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<junction x="40.64" y="35.56"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="35.56" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
@@ -6442,6 +6703,7 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="55.88" y1="48.26" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 <junction x="50.8" y="48.26"/>
 <junction x="55.88" y="48.26"/>
+<pinref part="T3" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -6453,14 +6715,14 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="60.96" y1="45.72" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="45.72" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="45.72" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="45.72" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="45.72" x2="71.12" y2="45.72" width="0.1524" layer="91"/>
 <junction x="60.96" y="45.72"/>
 <junction x="66.04" y="45.72"/>
 <pinref part="T2" gate="A" pin="G"/>
-<wire x1="73.66" y1="45.72" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="45.72" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="T1" gate="A" pin="G"/>
-<junction x="73.66" y="45.72"/>
+<junction x="71.12" y="45.72"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6480,7 +6742,7 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="T2" gate="A" pin="S"/>
-<wire x1="66.04" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="58.42" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="4"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
@@ -6490,9 +6752,9 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="93.98" y1="43.18" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 <junction x="91.44" y="48.26"/>
-<wire x1="78.74" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <junction x="66.04" y="58.42"/>
-<junction x="78.74" y="58.42"/>
+<junction x="76.2" y="58.42"/>
 <junction x="91.44" y="58.42"/>
 </segment>
 </net>
@@ -6500,6 +6762,14 @@ http://www.zetex.com&lt;p&gt;
 <segment>
 <pinref part="T2" gate="A" pin="D"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="45.72" x2="76.2" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="T1" gate="A" pin="D"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="35.56" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
